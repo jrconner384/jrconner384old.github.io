@@ -1,15 +1,17 @@
 # Site settings
 title: Jason Conner
 email: jason.r.conner@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  I ride Ruby on Rails.
+description: >
+  Ruby enthusiast. Rubethusiast?
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "jrconner384.github.io" # the base hostname & protocol for your site
 twitter_username: SplitBits
 github_username:  jrconner384
+timezone: America/Chicago
+highlighter: pygments
 
 # Build settings
 markdown: kramdown
 
 # Server Options
-host: janus.conner.lan # Automagically runs using my internal DNS. I'm not sure if this will screw up the GitHub page once I push this change, though.
+host: mercury.conner.lan # Automagically runs using my internal DNS. I'm not sure if this will screw up the GitHub page once I push this change, though.
