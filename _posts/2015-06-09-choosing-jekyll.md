@@ -2,7 +2,7 @@
 layout: post
 title:  "Choosing Jekyll"
 date:   2015-06-09 17:00
-categories: jekyll writing
+tags: jekyll writing
 ---
 Hi, I'm Jason and I write code. And I write _about_ code. It's more challenging than it should be and that's a real shame.
 
