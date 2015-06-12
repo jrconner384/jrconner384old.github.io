@@ -1,17 +1,21 @@
 # Site settings
-title: Jason Conner
-email: jason.r.conner@gmail.com
+title: Rubethusiasm!
 description: >
   Ruby enthusiast. Rubethusiast?
+
+# Where am I?
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "jrconner384.github.io" # the base hostname & protocol for your site
+timezone: America/Chicago
+
+# Contact
+email: jason.r.conner@gmail.com
 twitter_username: SplitBits
 github_username:  jrconner384
-timezone: America/Chicago
-highlighter: pygments
 
-# Build settings
+# Syntax
 markdown: kramdown
+highlighter: pygments
 
 # Server Options
 host: mercury.conner.lan # Automagically runs using my internal DNS. I'm not sure if this will screw up the GitHub page once I push this change, though.
