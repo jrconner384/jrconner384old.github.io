@@ -29,7 +29,9 @@ task :post do
 
   date = DateTime.now.strftime '%Y-%m-%d'
   slug = ENV['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  filename = File.join "./_posts/#{date}-#{slug}.md"
+  extension = ENV['extension'] ? ENV['extension'] : 'md'
+  extension[0] = '' if extension[0] == '.'
+  filename = File.join "./_posts/#{date}-#{slug}.#{extension}"
 
   abort 'Please choose a unique filename.' if File.exist? filename
 
