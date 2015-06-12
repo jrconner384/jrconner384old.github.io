@@ -17,8 +17,7 @@
     margin-bottom: 0;
     float: left;
 
-    &,
-    &:visited {
+    &, &:visited {
         color: $grey-color-dark;
     }
 }
@@ -86,8 +85,6 @@
     }
 }
 
-
-
 /**
  * Site footer
  */
@@ -101,8 +98,7 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
+.contact-list, .social-media-list {
     list-style: none;
     margin-left: 0;
 }
@@ -136,8 +132,7 @@
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
+    .footer-col-1, .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
@@ -155,8 +150,6 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-
 
 /**
  * Page content
@@ -187,8 +180,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
