@@ -10,13 +10,13 @@ require 'date'
 #
 # description - An optional description for the post.
 #
-# categories  - An optional comma-separated list of categories. These can be
-#               considered analogous to tags.
-#               The categories section of the YAML front-matter block will look
-#               exactly the same as the variable passed through the CLI. If it
-#               is given the string "blog article", the YAML front-matter will
-#               show `categories: "blog article"` even if the intent is for each
-#               word to appear as its own tag.
+# categories  - An optional set of categories. I'm not sure if this behavior is
+#               just part of Jekyll or something specific to the setup, but
+#               categories are used to create subdirectories in the URL such
+#               that the categories 'first second' will nest the post under
+#               'first/second/'.
+#
+# tags        - An optional set of tags to add metadata to the post.
 #
 # Examples:
 #
@@ -73,7 +73,9 @@ def post_front_matter
   fm =      "---\n"
   fm.concat "layout:      post\n"
   fm.concat "title:       \"#{ENV['title']}\"\n" if ENV['title']
-  fm.concat "description: \"#{ENV['description']}\"\n" if ENV['description']
-  fm.concat "categories:  \"#{ENV['categories']}\"\n" if ENV['categories']
+  fm.concat "date:        #{DateTime.now.strftime '%Y-%m-%d %H:%M'}\n"
+  fm.concat "description: #{ENV['description']}\n" if ENV['description']
+  fm.concat "categories:  #{ENV['categories']}\n" if ENV['categories']
+  fm.concat "tags:        #{ENV['tags']}\n" if ENV['tags']
   fm.concat "---\n"
 end
