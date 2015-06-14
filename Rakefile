@@ -42,10 +42,18 @@ end
 # to the Rake task as the CLI options. All options available on the command line
 # are available through this Rake task.
 #
+# The options can't be passed on their own, since Rake requires the variables to
+# be set to something. They can often be set to something like "true" or "yes"
+# if that makes more sense to you but, often, any sort of string will be useful.
+#
+# There are a few options which use the specific value assigned: limit, port,
+# host, and url.
+#
 # Examples:
 #
 #   rake serve
-#   rake serve verbose force_polling detached
+#   rake serve verbose="true" force_polling="true" detached="true"
+#   rake serve verbose="bananas" force_polling="" detached="sure"
 desc 'Starts the Jekyll server using the provided options.'
 task :serve do
   options = ''
