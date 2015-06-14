@@ -18,4 +18,4 @@ markdown: kramdown
 highlighter: pygments
 
 # Server Options
-host: mercury.conner.lan # Automagically runs using my internal DNS. I'm not sure if this will screw up the GitHub page once I push this change, though.
+# host: mercury.conner.lan # Automagically runs using my internal DNS. I'm not sure if this will screw up the GitHub page once I push this change, though.
