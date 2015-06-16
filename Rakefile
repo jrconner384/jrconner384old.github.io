@@ -87,5 +87,5 @@ def post_front_matter
   fm.concat "description: #{ENV['description']}\n" if ENV['description']
   fm.concat "categories:  #{ENV['categories']}\n" if ENV['categories']
   fm.concat "tags:        #{ENV['tags']}\n" if ENV['tags']
-  fm.concat "---\n"
+  fm.concat "---\n\n"
 end
